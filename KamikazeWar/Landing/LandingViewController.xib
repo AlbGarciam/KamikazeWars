@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingViewController" customModule="KamikazeWar" customModuleProvider="target">
+            <connections>
+                <outlet property="scoreLabel" destination="h2n-89-lDL" id="cJm-bW-rBB"/>
+                <outlet property="startButton" destination="LIr-47-06Z" id="ywT-cK-YNI"/>
+                <outlet property="titleLabel" destination="2pK-rD-mz5" id="zHq-LP-Kqw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIr-47-06Z">
+                    <rect key="frame" x="419" y="225" width="117" height="63"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
+                    <state key="normal" title="Start!">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kamikaze War!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pK-rD-mz5">
+                    <rect key="frame" x="32" y="32" width="441" height="68.5"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="54"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kamikaze War!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2n-89-lDL">
+                    <rect key="frame" x="32" y="116.5" width="261.5" height="40.5"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="0.82686750856164382" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2pK-rD-mz5" firstAttribute="top" secondItem="BKx-Mn-2Vj" secondAttribute="top" constant="32" id="FiA-cO-Ol0"/>
+                <constraint firstItem="h2n-89-lDL" firstAttribute="leading" secondItem="2pK-rD-mz5" secondAttribute="leading" id="IX1-Qx-yeU"/>
+                <constraint firstItem="BKx-Mn-2Vj" firstAttribute="bottom" secondItem="LIr-47-06Z" secondAttribute="bottom" constant="32" id="JUd-xn-4oV"/>
+                <constraint firstItem="BKx-Mn-2Vj" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2pK-rD-mz5" secondAttribute="trailing" constant="32" id="WZ7-bd-Ouz"/>
+                <constraint firstItem="BKx-Mn-2Vj" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h2n-89-lDL" secondAttribute="trailing" constant="32" id="XzL-lN-lHO"/>
+                <constraint firstItem="h2n-89-lDL" firstAttribute="top" secondItem="2pK-rD-mz5" secondAttribute="bottom" constant="16" id="otu-eM-pZZ"/>
+                <constraint firstItem="BKx-Mn-2Vj" firstAttribute="trailing" secondItem="LIr-47-06Z" secondAttribute="trailing" constant="32" id="tYM-qJ-Bxz"/>
+                <constraint firstItem="2pK-rD-mz5" firstAttribute="leading" secondItem="BKx-Mn-2Vj" secondAttribute="leading" constant="32" id="ut5-ky-AdM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="BKx-Mn-2Vj"/>
+        </view>
+    </objects>
+</document>

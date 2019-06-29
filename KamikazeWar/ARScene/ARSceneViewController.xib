@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ARSceneViewController" customModule="KamikazeWar" customModuleProvider="target">
+            <connections>
+                <outlet property="ammo1xButton" destination="fy6-hB-BvH" id="dF0-11-nyu"/>
+                <outlet property="ammo2xButton" destination="Jh4-Kt-sSN" id="tkq-vJ-VtQ"/>
+                <outlet property="sceneView" destination="jLY-qM-c54" id="cvO-2s-6M8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLY-qM-c54">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </arscnView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bf4-g8-vQA">
+                    <rect key="frame" x="11" y="265.5" width="66.5" height="98.5"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Oas-w3-0Q4">
+                        <rect key="frame" x="0.0" y="0.0" width="66.5" height="98.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="extraLight"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </visualEffectView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KMW-YQ-Uc4">
+                    <rect key="frame" x="16" y="270.5" width="56.5" height="88.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ammo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duO-7U-4s8">
+                            <rect key="frame" x="0.0" y="0.0" width="56.5" height="20.5"/>
+                            <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fy6-hB-BvH">
+                            <rect key="frame" x="0.0" y="20.5" width="56.5" height="34"/>
+                            <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                            <state key="normal" title="∞ 1x ">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jh4-Kt-sSN">
+                            <rect key="frame" x="0.0" y="54.5" width="56.5" height="34"/>
+                            <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                            <state key="normal" title="∞ 2x ">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bf4-g8-vQA" firstAttribute="centerY" secondItem="KMW-YQ-Uc4" secondAttribute="centerY" id="LIH-Vr-UaO"/>
+                <constraint firstItem="zRz-VE-sft" firstAttribute="bottom" secondItem="KMW-YQ-Uc4" secondAttribute="bottom" constant="16" id="MK9-Ti-WTE"/>
+                <constraint firstItem="jLY-qM-c54" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="O2l-ay-OmI"/>
+                <constraint firstItem="jLY-qM-c54" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="T5U-pr-gR8"/>
+                <constraint firstItem="bf4-g8-vQA" firstAttribute="width" secondItem="KMW-YQ-Uc4" secondAttribute="width" constant="10" id="VOu-r7-dVx"/>
+                <constraint firstItem="jLY-qM-c54" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="b5V-v5-Gho"/>
+                <constraint firstItem="jLY-qM-c54" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bdM-sZ-AsN"/>
+                <constraint firstItem="bf4-g8-vQA" firstAttribute="height" secondItem="KMW-YQ-Uc4" secondAttribute="height" constant="10" id="lie-Zz-WCX"/>
+                <constraint firstItem="bf4-g8-vQA" firstAttribute="centerX" secondItem="KMW-YQ-Uc4" secondAttribute="centerX" id="sWa-Yb-CxR"/>
+                <constraint firstItem="KMW-YQ-Uc4" firstAttribute="leading" secondItem="zRz-VE-sft" secondAttribute="leading" constant="16" id="vC5-fV-IjA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="zRz-VE-sft"/>
+        </view>
+    </objects>
+</document>
